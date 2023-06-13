@@ -155,6 +155,5 @@ export const SetTimeoutExampleTwo = () => {
 
     return <>
         Typed text : {text}
-
     </>
 }
