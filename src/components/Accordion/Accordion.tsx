@@ -42,7 +42,6 @@ export type AccordionBodyPropsType = {
     onClick: (value: any) => void
 }
 
-
 function AccordionBody(props: AccordionBodyPropsType) {
     console.log("AccordionBody rendering")
 
