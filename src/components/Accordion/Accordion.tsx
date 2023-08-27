@@ -13,7 +13,6 @@ export type AccordionPropsType = {
     onClick: (value: any) => void
 }
 
-
 export function Accordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
     return <div>
