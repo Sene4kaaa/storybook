@@ -23,7 +23,6 @@ export function Accordion(props: AccordionPropsType) {
     </div>
 }
 
-
 type AccordionTitlePropsType = {
     title: string
     setAccordionCollapsed: () => void
@@ -40,7 +39,6 @@ export type AccordionBodyPropsType = {
     items: ItemType[]
     onClick: (value: any) => void
 }
-
 
 function AccordionBody(props: AccordionBodyPropsType) {
     console.log("AccordionBody rendering")
