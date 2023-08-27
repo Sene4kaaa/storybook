@@ -17,11 +17,6 @@ function AccordionTitle(props: AccordionTitlePropsType) {
     )
 }
 
-export type AccordionBodyPropsType = {
-    items: ItemType[]
-    onClick: (value: any) => void
-}
-
 function AccordionBody(props: AccordionBodyPropsType) {
     console.log("AccordionBody rendering")
 
@@ -48,6 +43,11 @@ export type AccordionPropsType = {
 type AccordionTitlePropsType = {
     title: string
     setAccordionCollapsed: () => void
+}
+
+export type AccordionBodyPropsType = {
+    items: ItemType[]
+    onClick: (value: any) => void
 }
 
 export default Accordion;
