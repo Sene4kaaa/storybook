@@ -1,12 +1,5 @@
 import React from "react";
 
-export type  RatingValueType = 0 | 1 | 2 | 3 | 4 | 5;
-
-export type RatingPropsType = {
-    value: RatingValueType
-    setRatingValue: (value: RatingValueType) => void
-}
-
 export function Rating(props: RatingPropsType) {
     console.log("Rating rendering")
 
@@ -33,4 +26,11 @@ function Star(props: StarPropsType) {
     return <span onClick={()=>{props.setRatingValue(props.value)}}>
         {props.selected ? <b>star </b> : 'star '}
     </span>
+}
+
+export type  RatingValueType = 0 | 1 | 2 | 3 | 4 | 5;
+
+export type RatingPropsType = {
+    value: RatingValueType
+    setRatingValue: (value: RatingValueType) => void
 }
