@@ -3,38 +3,11 @@ import {reducer, TOGGLE_COLLAPSED} from "./Reducer";
 
 type AccordionPropsType = {
     titleValue: string
-    // collapsed: boolean
 }
-
-/*function Accordion(props: AccordionPropsType) {
-    console.log("Accordion rendering")
-    if (props.collapsed === false) {
-        return <div>
-            <AccordionTitle title={props.titleValue}/>
-            <AccordionBody/>
-        </div>
-    } else {
-        return <div>
-            <AccordionTitle title={props.titleValue}/>
-        </div>
-    }
-}*/
-
-
-/*function Accordion(props: AccordionPropsType) {
-    console.log("Accordion rendering")
-    return <div>
-        <AccordionTitle title={props.titleValue}/>
-        {props.collapsed === false &&  <AccordionBody/> }
-    </div>
-}*/
-
-
 
 function UncontrolledAccordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
 
-  // let [collapsed,setCollapsed]=useState(false);
   let [collapsed,dispatch]=useReducer(reducer, {collapsed: false});
 
 
