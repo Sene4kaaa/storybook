@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 
-
-
 function UncontrolledOnOff(props: OnOffType) {
 
     let [on, setOn] = useState(false)
