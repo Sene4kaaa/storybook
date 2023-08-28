@@ -1,10 +1,6 @@
 import React, {useReducer} from "react";
 import {reducer, TOGGLE_COLLAPSED} from "./Reducer";
 
-type AccordionPropsType = {
-    titleValue: string
-}
-
 function UncontrolledAccordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
 
@@ -40,6 +36,10 @@ function AccordionBody() {
         <li>2</li>
         <li>3</li>
     </ul>
+}
+
+type AccordionPropsType = {
+    titleValue: string
 }
 
 export default UncontrolledAccordion;
