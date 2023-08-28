@@ -13,10 +13,7 @@ function UncontrolledAccordion(props: AccordionPropsType) {
 }
 
 
-type AccordionTitlePropsType = {
-    title: string
-    onClick:()=>void
-}
+
 
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("AccordionTitle rendering")
@@ -37,6 +34,11 @@ function AccordionBody() {
 
 type AccordionPropsType = {
     titleValue: string
+}
+
+type AccordionTitlePropsType = {
+    title: string
+    onClick:()=>void
 }
 
 export default UncontrolledAccordion;
