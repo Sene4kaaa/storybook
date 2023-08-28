@@ -12,9 +12,6 @@ function UncontrolledAccordion(props: AccordionPropsType) {
     </div>
 }
 
-
-
-
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("AccordionTitle rendering")
     return (
