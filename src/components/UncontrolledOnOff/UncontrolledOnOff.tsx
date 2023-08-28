@@ -12,6 +12,7 @@ function UncontrolledOnOff(props: OnOffType) {
         padding: '2px',
         backgroundColor: on ? 'green' : 'white'
     }
+
     const offBut = {
         width: '30px',
         height: '20px',
@@ -21,6 +22,7 @@ function UncontrolledOnOff(props: OnOffType) {
         padding: '2px',
         backgroundColor: on ? 'white' : 'red'
     }
+
     const lightBut = {
         width: '10px',
         height: '10px',
@@ -29,13 +31,13 @@ function UncontrolledOnOff(props: OnOffType) {
         display: 'inline-block',
         marginLeft: '5px',
         backgroundColor: on ? 'green' : 'red'
-
     }
 
     const onClicked = () => {
         setOn(true)
         props.onChange(true)
     }
+
     const offClicked = () => {
         setOn(false)
         props.onChange(false)
