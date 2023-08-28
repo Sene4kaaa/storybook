@@ -1,12 +1,6 @@
-import React, {useState} from 'react';
-
-export type OnOffType = {
-    on: boolean
-    onChange: (on: boolean) => void
-}
+import React from 'react';
 
 export function OnOff(props: OnOffType) {
-
 
     const onBut = {
         width: '30px',
@@ -16,6 +10,7 @@ export function OnOff(props: OnOffType) {
         padding: '2px',
         backgroundColor: props.on ? 'green' : 'white'
     }
+
     const offBut = {
         width: '30px',
         height: '20px',
@@ -25,6 +20,7 @@ export function OnOff(props: OnOffType) {
         padding: '2px',
         backgroundColor: props.on ? 'white' : 'red'
     }
+
     const lightBut = {
         width: '10px',
         height: '10px',
@@ -33,7 +29,6 @@ export function OnOff(props: OnOffType) {
         display: 'inline-block',
         marginLeft: '5px',
         backgroundColor: props.on ? 'green' : 'red'
-
     }
 
     return (
@@ -49,6 +44,11 @@ export function OnOff(props: OnOffType) {
             <div style={lightBut}></div>
         </div>
     )
+}
+
+export type OnOffType = {
+    on: boolean
+    onChange: (on: boolean) => void
 }
 
 export default OnOff;
