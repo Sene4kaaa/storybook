@@ -7,7 +7,6 @@ function UncontrolledAccordion(props: AccordionPropsType) {
   let [collapsed,dispatch]=useReducer(reducer, {collapsed: false});
 
     return <div>
-        {/*<AccordionTitle title={props.titleValue}  onClick={()=>{setCollapsed(!collapsed)}}/>*/}
         <AccordionTitle title={props.titleValue}  onClick={()=>{dispatch({type: TOGGLE_COLLAPSED})}}/>
         {!collapsed  &&  <AccordionBody/> }
     </div>
