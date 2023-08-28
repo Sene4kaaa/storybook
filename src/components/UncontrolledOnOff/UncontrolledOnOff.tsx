@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 
-type OnOffType = {
-    onChange: (on: boolean) => void
-}
+
 
 function UncontrolledOnOff(props: OnOffType) {
 
@@ -52,6 +50,10 @@ function UncontrolledOnOff(props: OnOffType) {
             <div style={lightBut}></div>
         </div>
     )
+}
+
+type OnOffType = {
+    onChange: (on: boolean) => void
 }
 
 export default UncontrolledOnOff;
