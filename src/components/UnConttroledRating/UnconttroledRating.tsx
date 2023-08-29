@@ -1,9 +1,5 @@
 import React, {useState} from "react";
 
-type RatingPropsType = {
-    // value: 0 | 1 | 2 | 3 | 4 | 5
-}
-
 export function UnconttroledRating(props: RatingPropsType) {
     console.log("Rating rendering")
 
@@ -20,10 +16,7 @@ export function UnconttroledRating(props: RatingPropsType) {
     );
 }
 
-type StarPropsType = {
-    selected: boolean
-    setValue : ()=>void
-}
+
 
 function Star(props: StarPropsType) {
     console.log("Star rendering")
@@ -31,4 +24,13 @@ function Star(props: StarPropsType) {
     return <span onClick={()=>{props.setValue()}}>
             {props.selected ? <b>star </b> : 'star '}
     </span>
+}
+
+type RatingPropsType = {
+    // value: 0 | 1 | 2 | 3 | 4 | 5
+}
+
+type StarPropsType = {
+    selected: boolean
+    setValue : ()=>void
 }
