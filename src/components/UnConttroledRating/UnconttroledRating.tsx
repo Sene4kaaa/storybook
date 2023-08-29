@@ -16,8 +16,6 @@ export function UnconttroledRating(props: RatingPropsType) {
     );
 }
 
-
-
 function Star(props: StarPropsType) {
     console.log("Star rendering")
 
