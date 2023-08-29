@@ -7,10 +7,10 @@ import Accordion from "./components/Accordion/Accordion";
 import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
 function App(props: any) {
+
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     let [switchOn, setSwitchOn] = useState<boolean>(false)
-
 
     const onClickCallback = () => {
         alert('hello')
@@ -39,8 +39,8 @@ function App(props: any) {
                 <Accordion titleValue={'Trening'}
                            collapsed={accordionCollapsed}
                            setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}
-                           items={[{title:'Andrew',value: 1},{title: 'Kate',value: 2} ,{title:'Matvei',value: 3}]}
-                onClick={onClickCallback}/>
+                           items={[{title: 'Andrew', value: 1}, {title: 'Kate', value: 2}, {title: 'Matvei', value: 3}]}
+                           onClick={onClickCallback}/>
             </div>
             <hr/>
             <div>
