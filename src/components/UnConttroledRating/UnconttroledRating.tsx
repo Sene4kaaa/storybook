@@ -25,7 +25,7 @@ function Star(props: StarPropsType) {
 }
 
 type RatingPropsType = {
-    // value: 0 | 1 | 2 | 3 | 4 | 5
+    value: 0 | 1 | 2 | 3 | 4 | 5
 }
 
 type StarPropsType = {
